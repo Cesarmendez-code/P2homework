@@ -25,6 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LavadoAuto.Aplication\LavadoAuto.Aplication.csproj" />
+    <ProjectReference Include="..\LavadoAuto.Domain\LavadoAuto.Domain.csproj" />
     <ProjectReference Include="..\LavadoAuto.Infretruture\LavadoAuto.Infretruture.csproj" />
   </ItemGroup>
 

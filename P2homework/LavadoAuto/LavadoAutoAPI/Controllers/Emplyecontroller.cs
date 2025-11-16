@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using LavadoAuto.Infretruture.Data;
-using tienda_videojuegos.Dtos;
+using LavadoAuto.Aplication.Dtos;
 using LavadoAuto.Infretruture.Model;
 
 namespace tienda_videojuegos.Controllers

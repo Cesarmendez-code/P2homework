@@ -1,13 +1,15 @@
-﻿using System;
+﻿using LavadoAuto.Infretruture.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using  LavadoAuto.Infretruture.Model;
- 
+
 namespace LavadoAuto.Infretruture.Interfaces
 {
-    public interface IServicio:IBaserepositorie<ServicioModel>
+    public interface IServicio : IBaserepositorie<ServicioModel>
     {
+        Task<ServicioModel> CreateServicioAsync(ServicioModel servicio);
+        Task DeleteServicioAsync(int id);
+        Task<List<ServicioModel>> GetAllServiciosAsync();
+        Task<ServicioModel> GetServicioByIdAsync(int id);
+        Task<ServicioModel> UpdateServicioAsync(int id, ServicioModel servicio);
     }
 }

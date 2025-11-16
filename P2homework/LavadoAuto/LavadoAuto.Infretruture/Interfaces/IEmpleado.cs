@@ -1,5 +1,6 @@
 ﻿using  LavadoAuto.Infretruture.Model;
 using System;
+using LavadoAuto.Infretruture.Model;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,10 @@ namespace LavadoAuto.Infretruture.Interfaces
 {
     public interface IEmpleado:IBaserepositorie<EmpleadoModel>
     {
+        Task<EmpleadoModel> CreateEmpleadoAsync(EmpleadoModel EmpleadoModel);
+        Task DeleteEmpleadoAsync(int id);
+        Task<List<EmpleadoModel>> GetAllEmpleadosAsync();
+        Task<EmpleadoModel> GetEmpleadoByIdAsync(int id);
+        Task<EmpleadoModel> UpdateEmpleadoAsync(int id, EmpleadoModel EmpleadoModel);
     }
 }

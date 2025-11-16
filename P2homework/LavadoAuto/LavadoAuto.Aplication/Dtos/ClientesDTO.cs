@@ -1,4 +1,4 @@
-﻿namespace tienda_videojuegos.Dtos
+﻿namespace LavadoAuto.Aplication.Dtos
 {
     public class ClienteDTO
     {
