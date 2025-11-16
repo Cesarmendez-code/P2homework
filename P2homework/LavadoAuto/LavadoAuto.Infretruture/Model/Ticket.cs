@@ -18,11 +18,11 @@ namespace LavadoAuto.Infretruture.Model
         public int IdServicio { get; set; }
         public int IdEmpleado { get; set; }
 
-        // Relaciones:
-        public VehiculoModel Vehiculo { get; set; }   // Un ticket pertenece a un vehículo
-        public EmpleadoModel Empleado { get; set; }   // Un ticket lo genera un empleado
-        public ServicioModel Servicio { get; set; }   // Un ticket tiene un servicio asociado
-
+  
+        public VehiculoModel Vehiculo { get; set; }    
+        public EmpleadoModel Empleado { get; set; }    
+        public ServicioModel Servicio { get; set; }    
+                                                       
         public TicketModel(int idTicket, DateTime fecha, decimal total)
             {
 
@@ -30,6 +30,10 @@ namespace LavadoAuto.Infretruture.Model
             IdTicket = idTicket;
             Fecha = fecha;
             Total = total;
+
+        }
+        public TicketModel()
+        {
 
         }
     }

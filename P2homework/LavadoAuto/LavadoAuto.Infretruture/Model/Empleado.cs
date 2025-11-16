@@ -13,10 +13,11 @@ namespace  LavadoAuto.Infretruture.Model
         [Key]
         public int IdEmpleado { get; set; }
         public string Nombre { get; set; }
-        public string Puesto { get; set; } // Ejemplo: Lavador, Cajero, Supervisor
+        public string Puesto { get; set; } 
+
         public decimal SueldoPorHora { get; set; }
 
-        // Relación: un empleado puede generar varios tickets
+      
         public List<TicketModel> TicketsGenerados { get; set; }
 
         public EmpleadoModel(int idEmpleado, string nombre, string puesto, decimal sueldoPorHora)
@@ -26,6 +27,11 @@ namespace  LavadoAuto.Infretruture.Model
             Puesto = puesto;
             SueldoPorHora = sueldoPorHora;
             TicketsGenerados = new List<TicketModel>();
+        }
+
+        public EmpleadoModel()
+        {
+            
         }
     }
 

@@ -9,9 +9,9 @@ namespace Lavado.Application.Services
 {
     public class EmpleadoService : IEmpleadoService
     {
-        private readonly IEmpleado _empleado;
+        private readonly IEmpleadoRepository _empleado;
 
-        public EmpleadoService(IEmpleado empleado)
+        public EmpleadoService(IEmpleadoRepository empleado)
         {
             _empleado = empleado;
         }

@@ -13,11 +13,10 @@ namespace  LavadoAuto.Infretruture.Model
         [Key]
         public int IdServicio { get; set; }
         public string Nombre { get; set; }
-        public string Tipo { get; set; } // Básico, Premium, Full
+        public string Tipo { get; set; } 
         public decimal Precio { get; set; }
         public TimeSpan DuracionEstimada { get; set; }
 
-        // Relación: un servicio puede estar en varios tickets
         public List<TicketModel> Tickets { get; set; }
 
         public ServicioModel(int idServicio, string nombre, string tipo, decimal precio, TimeSpan duracionEstimada)
@@ -28,6 +27,11 @@ namespace  LavadoAuto.Infretruture.Model
             Precio = precio;
             DuracionEstimada = duracionEstimada;
             Tickets = new List<TicketModel>();
+        }
+
+        public ServicioModel()
+        {
+            
         }
     }
 }

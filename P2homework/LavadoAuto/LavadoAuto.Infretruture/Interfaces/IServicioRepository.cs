@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace LavadoAuto.Infretruture.Interfaces
 {
-    public interface IServicio : IBaserepositorie<ServicioModel>
+    public interface IServicioRepository : IBaserepositorie<ServicioModel>
     {
         Task<ServicioModel> CreateServicioAsync(ServicioModel servicio);
         Task DeleteServicioAsync(int id);

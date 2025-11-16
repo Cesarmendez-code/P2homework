@@ -19,12 +19,7 @@ namespace LavadoAuto.Infretruture.Model
         public string Modelo { get; set; }
         public string Tipo { get; set; }
         public int IdCliente { get; set; }
-        // Ejemplo: Sedan, SUV, Camioneta
-
-        // Relación: un vehículo pertenece a un cliente
         public ClienteModel  Cliente { get; set; }
-
-        // Relación: un vehículo puede tener varios tickets
         public List<TicketModel> Tickets { get; set; }
 
         public VehiculoModel(int idVehiculo, string placa, string marca, string modelo, string tipo)
@@ -35,6 +30,10 @@ namespace LavadoAuto.Infretruture.Model
             Modelo = modelo;
             Tipo = tipo;
             Tickets = new List<TicketModel >();
+        }
+            public VehiculoModel()
+        {
+
         }
     }
 }

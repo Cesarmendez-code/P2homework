@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LavadoAuto.Infretruture.Interfaces
 {
-    public interface IEmpleado:IBaserepositorie<EmpleadoModel>
+    public interface IEmpleadoRepository:IBaserepositorie<EmpleadoModel>
     {
         Task<EmpleadoModel> CreateEmpleadoAsync(EmpleadoModel EmpleadoModel);
         Task DeleteEmpleadoAsync(int id);

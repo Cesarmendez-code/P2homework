@@ -9,9 +9,9 @@ namespace LavadoAuto.Aplication.Services
 {
     public class ServicioService : IServicioService
     {
-        private readonly IServicio _servicio;
+        private readonly IServicioRepository _servicio;
 
-        public ServicioService(IServicio servicio)
+        public ServicioService(IServicioRepository servicio)
         {
             _servicio = servicio;
         }
